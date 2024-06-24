@@ -111,8 +111,8 @@ public class YandexTest {
         Driver.refresh();
         Assert.assertEquals(yandexPage.getEmptyState().getText(), "Войдите в аккаунт");
     }
-    //@AfterClass
-    //public static void tearDown() {
-    //    Driver.getDriver().quit();
-    //}
+    @AfterClass
+    public static void tearDown() {
+        Driver.getDriver().quit();
+    }
 }
