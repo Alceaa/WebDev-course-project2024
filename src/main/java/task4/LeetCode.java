@@ -14,13 +14,13 @@ public class LeetCode{
         this.driver = driver;
     }
 
-    @FindBy(xpath = "//*[@id=\"product\"]/div/div/div[1]/div/a")
+    @FindBy(xpath = "//a[@href=\"/problemset/\"]")
     private WebElement problemSetPage;
 
     @FindBy(xpath = "//*[@id=\"leetcode-navbar\"]/div[1]/ul/li[2]")
     private WebElement navbarProblems;
 
-    @FindBy(xpath = "//*[@id=\"__next\"]/div[1]/div[4]/div[2]/div[1]/div[4]/div[1]/div[1]/div[5]/div[1]/div/input")
+    @FindBy(xpath = "//input[@placeholder=\"Search questions\"]")
     private WebElement inputProblems;
 
     @FindBy(xpath = "//a[@href=\"/problems/two-sum\"]")
@@ -29,27 +29,27 @@ public class LeetCode{
     @FindBy(xpath = "//a[@href=\"/problems/two-sum/\"]")
     private WebElement problemTitle;
 
-    @FindBy(xpath = "//*[@id=\"landing-page-app\"]/div/div[1]/div[3]/div[1]/div/div/div[1]/div/div/span")
+    @FindBy(xpath = "//*[@class=\"lc\"]")
     private WebElement logoTitle;
 
-    @FindBy(xpath = "//*[@id=\"explore\"]/div/div/div[2]/div/a/p")
+    @FindBy(xpath = "//a[@href=\"/explore/\"]")
     private WebElement explorePage;
     @FindBy(xpath = "//*[@class=\"title explore-page-title\"]")
-    private WebElement titleExplore ;
+    private WebElement titleExplore;
 
     @FindBy(xpath = "//*[@id=\"leetcode-navbar\"]/div[1]/ul/li[4]")
     private WebElement navbarDiscuss;
 
-    @FindBy(xpath = "//*[@id=\"discuss-container\"]/div/div/div[3]/div[1]/div/div[2]/div/span/input")
+    @FindBy(xpath = "//input[@placeholder=\"Search topics or comments...\"]")
     private WebElement inputDiscuss;
 
     @FindBy(xpath = "//*[@class=\"topic-list-content__3Win\"]")
     private WebElement listDiscuss;
 
-    @FindBy(xpath = "//*[@id=\"__next\"]/div[1]/div[4]/div[2]/div[1]/div[4]/div[3]/div")
+    @FindBy(xpath = "//*[@id=\"headlessui-listbox-button-:ra:\"]")
     private WebElement filterCount;
 
-    @FindBy(xpath = "//*[@id=\"__next\"]/div[1]/div[4]/div[2]/div[1]/div[4]/div[1]/div[1]/div[2]")
+    @FindBy(xpath = "//*[@id=\"headlessui-menu-button-:r3:\"]")
     private WebElement filterDifficulty;
 
     public WebElement getProblemSetPage(){

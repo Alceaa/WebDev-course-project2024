@@ -18,16 +18,16 @@ public class Lambda {
     }
     TreeMap<String, WebElement> elements = new TreeMap<>();
 
-    @FindBy(xpath = "/html/body/div/div/h2")
+    @FindBy(xpath = "//h2")
     private WebElement title;
 
-    @FindBy(xpath = "/html/body/div/div/div/span")
+    @FindBy(xpath = "//span")
     private WebElement span;
 
-    @FindBy(xpath = "/html/body/div/div/div/ul/li[1]")
+    @FindBy(xpath = "//li[1]")
     private WebElement first;
 
-    @FindBy(xpath = "/html/body/div/div/div/ul")
+    @FindBy(xpath = "//ul")
     private WebElement list;
 
     @FindBy(xpath = "//*[@id=\"sampletodotext\"]")

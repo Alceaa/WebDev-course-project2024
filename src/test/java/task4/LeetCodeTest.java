@@ -134,7 +134,7 @@ public class LeetCodeTest {
             leetcodePage.getFilterDifficulty().findElements(By.xpath(".//div")).get(1).findElement(By.xpath("div")).click();
             Assert.assertEquals(20, leetcodePage.getProblemsList().findElements(By.xpath("//*[text() = 'Easy']")).size());
         }catch (Exception e){
-            System.out.println("Не все проблемы имееют сложность \"Easym\"");
+            System.out.println("Не все проблемы имееют сложность \"Easy\"");
         }
     }
     @Step("Вернуться на главную страницу, кейс 3")

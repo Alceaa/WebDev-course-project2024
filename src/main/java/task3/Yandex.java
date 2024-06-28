@@ -13,13 +13,13 @@ public class Yandex {
         this.driver = driver;
     }
 
-    @FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/header/div[1]/div/div/noindex[1]/div/div/button")
+    @FindBy(xpath = "//div[@data-zone-name=\"catalog\"]/button")
     private WebElement categoryBtn;
 
-    @FindBy(xpath = "/html/body/div[7]/div/div/div/div/div/div/div[2]/div/div/div/div[1]/div/div/div/div/div/div/div/div[2]/div[3]/ul/li[1]/div/a")
+    @FindBy(xpath = "//a[@href=\"/catalog--geiming/41813350\"]")
     private WebElement category;
 
-    @FindBy(xpath = "/html/body/div[7]/div/div/div/div/div/div/div[1]/div/ul/li[22]/a")
+    @FindBy(xpath = "//a[@text()=\"Игровые приставки\"]")
     private WebElement subCategory;
 
     @FindBy(xpath = "//*[@data-auto=\"SerpList\"]")

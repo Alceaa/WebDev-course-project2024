@@ -12,16 +12,16 @@ public class Mospolytech {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
-    @FindBy(xpath = "/html/body/header/nav/div[1]/div[2]/div[1]/div/ul/li[3]/a/i")
+    @FindBy(xpath = "//a[@title=\"Расписание\"]")
     private WebElement scheduleBtn;
 
-    @FindBy(xpath = "//*[@id=\"bx_3777608605_2811\"]/div[3]/div/div[1]/a")
+    @FindBy(xpath = "//a[@href=\"https://rasp.dmami.ru/\"]")
     private WebElement goToSiteBtn;
 
-    @FindBy(xpath = "/html/body/div/div[1]/div[1]/div[3]/input[1]")
+    @FindBy(xpath = "//input[@placeholder=\"группа ...\"]")
     private WebElement groupInput;
 
-    @FindBy(xpath = "/html/body/div/div[1]/div[2]")
+    @FindBy(xpath = "//div[@class=\"found-groups row not-print\"]")
     private WebElement groupList;
 
     public WebElement getScheduleBtn(){
